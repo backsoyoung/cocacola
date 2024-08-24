@@ -1,0 +1,671 @@
+@charset "utf-8";
+
+  
+  @keyframes lflowText {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes rflowText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+/* 보이는 화면 기준 크기설정! */
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+body {
+    background-color: #b40000;
+}
+
+/* 한페이지 크기를 잡아줄 공통 클래스! */
+.page {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 1040px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* page2 - new-product *********************/
+/* chapter1 */
+
+/* section.new{
+    background: url(../images/product-bg.png) no-repeat right bottom;
+    background-size: 55%;
+} */
+
+section.new .n-chapter1 {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    line-height: 115px;
+
+    position: relative;
+    top: 40%;
+
+    /* opacity: 0; */
+}
+
+section.new .n-chapter1 p:first-child {
+    transform: translateX(-15%);
+}
+
+section.new .n-chapter1 p:last-child {
+    transform: translateX(15%);
+}
+
+
+/* chapter2 */
+section.new .n-chapter2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 9%;
+    /* .bg의 기준 */
+}
+
+section.new .n-chapter2 .n-caption {
+    padding-top: 9%;
+    float: left;
+    width: 50%;
+}
+
+section.new .n-chapter2 .n-caption h2 {
+    font-size: 40px;
+    font-family: "LEMONMILK-Bold";
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+section.new .n-chapter2 .n-caption h3 {
+    font-size: 50px;
+    font-family: 'SBAggroB';
+    color: pink;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+section.new .n-chapter2 .n-caption .des1 {
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1.5;
+    margin-bottom: 10px;
+}
+
+section.new .n-chapter2 .n-caption .des2 {
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 1.5;
+}
+
+section.new .n-chapter2 .n-product {
+    float: right;
+    width: 50%;
+
+    position: relative; /* img, bg의 기준 */
+    z-index: 1;
+}
+
+section.new .n-chapter2 .n-product a img {
+    display: block;
+
+    position: absolute;
+    top: -50%;
+    right: 2%;
+    
+}
+
+section.new .n-chapter2 .n-bg {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}
+
+section.new .n-chapter2 .n-bg img {
+    width: 100%;
+}
+
+
+
+/* page3 - limited-product *********************/
+/* chapter1 */
+section.limited .l-chapter1 {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    line-height: 115px;
+    letter-spacing: 1.5;
+
+    position: relative;
+    top: 40%;
+
+}
+
+section.limited .l-chapter1 p:first-child {
+    transform: translateX(-15%);
+}
+
+section.limited .l-chapter1 p:last-child {
+    transform: translateX(15%);
+}
+
+/* chapter2 */
+section.limited .l-chapter2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* .bg의 기준 */
+
+    padding-top: 9%;
+}
+
+section.limited .l-chapter2 .l-caption {
+    padding-top: 9%;
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+section.limited .l-chapter2 .l-caption h2 {
+    font-size: 40px;
+    font-family: "LEMONMILK-Bold";
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+section.limited .l-chapter2 .l-caption h3 {
+    font-size: 50px;
+    font-family: 'SBAggroB';
+    color: pink;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+section.limited .l-chapter2 .l-caption .des1 {
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1.5;
+    margin-bottom: 10px;
+}
+
+section.limited .l-chapter2 .l-caption .des2 {
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 28px;
+    line-height: 35px;
+    letter-spacing: 1.5;
+    word-break: keep-all;
+}
+
+section.limited .l-chapter2 .l-product {
+    float: left;
+    width: 50%;
+
+    position: relative;
+    z-index: 1;
+}
+
+section.limited .l-chapter2 .l-product a img {
+    width: 600px;
+    height: 600px;
+    display: block;
+
+    position: absolute;
+    top: -50%;
+    left: 0;
+}
+
+section.limited .l-chapter2 .l-bg {
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+}
+
+section.limited .l-chapter2 .l-bg img {
+    width: 100%;
+}
+
+
+/* page4 - stockvideo *********************/
+section.stockvideo .content-box {
+    width: 100%;
+    height: 100%;
+
+    position: relative; /* .always .drink의 기준 */
+}
+section.stockvideo .content-box .cokestudio{
+    width: 100%;
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 500px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+
+.swiper-slide iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.swiper-pagination {
+    color: #fff;
+}
+
+section.stockvideo .content-box .always{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+.always p{
+    color: #fff;
+    font-size: 70px;
+    font-family: "LEMONMILK-Bold";
+}
+
+section.stockvideo .content-box .drink{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+.drink p{
+    color: #b40000;
+    font-size: 70px;
+    font-family: "LEMONMILK-Bold";
+}
+
+.lflowing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: lflowText 15s linear infinite;
+  }
+.rflowing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: rflowText 20s linear infinite;
+  }
+
+
+
+/* page5 - event *********************/
+section.event {
+    background: url(../images/olimpic_bg.jpg) no-repeat center/cover;
+}   
+
+section.event .inner {
+    position: relative; /* .event-txt, .event-img의 기준 */
+}
+
+section.event .event-txt {
+    float: left;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: -18px;
+    transform: translateY(-50%);
+}
+
+section.event .event-txt .title {
+    color: #fff;
+    font-family: "LEMONMILK-Bold";
+    font-size: 45px;
+    letter-spacing: 1.2px;
+}
+
+section.event .event-txt p {
+    margin-top: 30px;
+    color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+
+/* 버튼 스타일*************** */
+.btn {
+    width: 33%;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 0px 5px 5px 5px;
+}
+.button_base {
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -100px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.button_base:hover {
+    cursor: pointer;
+}
+
+.b05_3d_roll {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+}
+
+.b05_3d_roll div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: #fff solid 3px;
+    font-family: "LEMONMILK-Bold";
+    letter-spacing: 1.2px;
+    pointer-events: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.b05_3d_roll div:nth-child(1) {
+    background-color: #fff;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+.b05_3d_roll div:nth-child(1) a{
+    color: #b40000;
+}
+
+.b05_3d_roll div:nth-child(2) {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+.b05_3d_roll div:nth-child(2) a{
+    color: #fff;
+}
+
+.b05_3d_roll:hover div:nth-child(1) {
+    color: #b40000;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+}
+
+.b05_3d_roll:hover div:nth-child(2) {
+    background-color: #b40000;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+}
+
+section.event .event-img {
+    float: right;
+    width: 50%;
+
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+}
+
+section.event .event-img .s-cocacola {
+    position: absolute;
+    bottom: 7%;
+    right: 40%;
+    transform: translateX(50%);
+    z-index: 1;
+}
+
+section.event .event-img .m-cocacola{
+    position: absolute;
+    bottom: 7%;
+    left: 27%;
+}
+
+section.event .event-img .powerade{
+    position: absolute;
+    bottom: 7%;
+    right: 6%;
+}
+
+
+
+/* page6 - promotion *********************/
+section.promotion {
+    padding-top: 9%;
+    box-sizing: border-box;
+}
+
+section.promotion .title-box {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+section.promotion .title-box .title {
+    font-family: "LEMONMILK-Bold";
+    font-size: 45px;
+    letter-spacing: 1.2px;
+}
+
+section.promotion .title-box p {
+    margin-top: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.2;
+}
+
+section.promotion .pm {
+    margin-top: 30px;
+    width: 32%;
+    float: left;
+    border: 5px solid #fff;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+
+    position: relative; /* .hoverbg의 기준 */
+}
+
+
+section.promotion .pm~.pm {
+    margin-left: 2%;
+}
+
+section.promotion .pm .img-box img {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    border: 5px solid #fff;
+    box-sizing: border-box;
+}
+
+section.promotion .pm .hoverbg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+section.promotion .pm:hover .hoverbg {
+    opacity: 1;
+}
+
+section.promotion .pm .sub-title {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+section.promotion .pm .title {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1.2;
+}
+
+
+/* page7 - brand *********************/
+section.brand {
+    padding-top: 10%;
+    box-sizing: border-box;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+section.brand .title-box {
+    width: 100%;
+    color: #fff;
+}
+
+section.brand .title-box .title {
+    font-family: "LEMONMILK-Bold";
+    font-size: 45px;
+    letter-spacing: 1.2px;
+}
+
+section.brand .title-box p {
+    margin-top: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.2;
+}
+
+section.brand .logo-box {
+    margin-top: 5%;
+    width: 100%;
+}
+
+section.brand .logo-box .logos {
+    width: 400%;
+    position: relative;
+    left: 0;
+}
+
+section.brand .logo-box .logos li {
+    background-color: #fff;
+    width: 4%;
+    float: left;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+
+section.brand .logo-box .logos li a img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+section.brand .btn {
+    margin-top: 5%;
+}
+
+
+/* 블릿 메뉴 */
+ul#bnavi {
+    width: 15px;
+
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ul#bnavi li {
+    width: 100%;
+    height: 15px;
+    margin: 6px 0;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+ul#bnavi li a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+ul#bnavi li a span {
+    font-size: 0;
+}
+
+.selB {
+    background-color: #fff;
+    transform: scale(1.15);
+}
+
+.selB span {
+    display: block !important;
+}
